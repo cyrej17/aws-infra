@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 module "vpc" {
-  source      = "app.terraform.io/jurassic-park/vpc/aws"
-  version     = "1.0.0"
+  source  = "app.terraform.io/cyrej_yt_ops/vpc/aws"
+  version = "1.0.1"
   vpc_configs = var.vpc_configs
 }
 

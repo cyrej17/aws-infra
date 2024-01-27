@@ -1,3 +1,12 @@
+terraform {
+  backend "remote" {
+    organization = "cyrej_yt_ops"
+    workspaces {
+      name = "dev-aws-infra-vpc"
+    }
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
 }

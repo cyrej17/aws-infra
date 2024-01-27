@@ -5,7 +5,7 @@ provider "aws" {
 module "vpc" {
   source  = "app.terraform.io/cyrej_yt_ops/vpc/aws"
   version = "1.0.2"
-  vpc_configs = { for entry in var.vpc_configs : entry.name => entry } 
+  vpc_configs_map = { for entry in var.vpc_configs : entry.name => entry } 
 }
 
 
